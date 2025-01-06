@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-$g!$)%tu8rdft-3t5)l677*8c!5n&k8gr(&k4!1ha*azrb7@v8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'news',
     'users',
+    'newapp',
 ]
 
 MIDDLEWARE = [
@@ -110,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru'
 
 TIME_ZONE = 'UTC'
 

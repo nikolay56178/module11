@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 
-from django.http import HttpResponse
+from django.http import HttpResponse,HttpResponseNotFound
 
 
 def index(request):
@@ -14,4 +14,5 @@ def page1(request):
 def page2(request):
     return render(request,"news/page2.html")
 
-
+def pageNotFound(request, exception):
+    return HttpResponseNotFound('<h1>Страница не найдена!</h1>')
